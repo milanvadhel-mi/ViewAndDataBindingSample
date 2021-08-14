@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
             tvUsername.text = "Username : Milan Vadhel"
-            tvEmail.text = "milan.vadhel@mindinventroy.com"
-            //tvSample.text = "Hello World" // Null Safe
+            tvEmail.text = "Email : milan.vadhel@mindinventroy.com"
+            // tvSample.text = "Hello World" // Null Safe
         }
     }
 }

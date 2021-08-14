@@ -21,6 +21,18 @@ class SampleFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUserInfo()
+    }
+
+    private fun setUserInfo() {
+        with(binding) {
+            tvUsername.text = "Username : Milan Vadhel"
+            tvEmail.text = "Email : milan.vadhel@mindinventroy.com"
+        }
+    }
+
     /**
      * Fragments outlive their views.
      * Make sure you clean up any references to the binding class instance in the fragment's onDestroyView() method.
